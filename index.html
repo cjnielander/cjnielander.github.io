@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+* {
+  box-sizing: inherit;
+}
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+        
+body {
+  margin:0;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.mlrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: calc(100% - 8em);
+}
+
+.group::after {
+  clear:both;
+  content: '';
+  display:table;
+}
+
+.brick {
+  float: left;
+  height: 3em;
+}
+
+        .bg-pink            { background-color: pink; }
+        .bg-brown           { background-color: tan; }
+        .bg-gray            { background-color: darkgrey; }
+        .bg-darkgray        { background-color: darkblue; }
+        .bg-lightgray       { background-color: lightgrey; }
+        .bg-red             { background-color: red; }
+        .bg-orange          { background-color: orangered; }
+        .bg-yellow          { background-color: gold; }
+        .bg-green           { background-color: darkseagreen; }
+        .bg-blue            { background-color: skyblue; }
+        .bg-purple          { background-color: mediumpurple; }
+        .bg-black           { background-color: black; }
+
+        .white              { color: white; }
+        .black              { color: black; }
+        
+        .group {
+            margin-left: .-75em;
+            margin-right: .-75em;
+        }
+        
+        @media (min-width: 800px)
+            
+        .column, 
+        .columns {
+            float:left;
+            padding-left: .75em;
+            padding-right: .75em;  
+            box-sizing: border-box;
+        }
+        
+        .one    { width: calc(100% / 7 * 1); }
+        .two    { width: calc(100% / 7 * 2); }
+        .three  { width: calc(100% / 7 * 3); }
+        .four   { width: calc(100% / 7 * 4); }
+        .five   { width: calc(100% / 7 * 5); }
+        .six    { width: calc(100% / 7 * 6); }
+        .seven  { width: calc(100% / 7 * 7); }
+         
+.push-one      { margin-left: calc(100% / 7 * 1); }
+.push-two      { margin-left: calc(100% / 7 * 2); }
+.push-three    { margin-left: calc(100% / 7 * 3); }
+.push-four     { margin-left: calc(100% / 7 * 4); }
+.push-five     { margin-left: calc(100% / 7 * 5); }
+.push-six      { margin-left: calc(100% / 7 * 6); }
+.push-seven    { margin-left: calc(100% / 7 * 7); }
+
+        
+    </style>
+    
+    <body>
+        <header class="container mlrauto">
+      <h1> Stripes </h1>
+      <p> </p>
+        </header>
+        <main>
+            
+            
+    <div class="group">
+    <div class="brick bg-red one"></div>
+    <div class="brick bg-orange three push-one"></div>
+    <div class="brick bg-yellow three"></div>
+    <div class="brick bg-green three"></div>
+    <div class="brick bg-blue three"></div>
+    <div class="brick bg-purple one push-one"></div>
+    <div class="brick bg-red three"></div>
+    <div class="brick bg-orange two push-one"></div>
+    <div class="brick bg-yellow two"></div>
+    <div class="brick bg-green eight"></div>
+    <div class="brick bg-blue three"></div>
+    <div class="brick bg-purple three push-two"></div>
+    <div class="brick bg-red eight"></div>
+    <div class="brick bg-orange four push-two"></div>
+    <div class="brick bg-orange two push-one"></div>
+    <div class="brick bg-yellow two"></div>
+    <div class="brick bg-green eight"></div>
+    <div class="brick bg-blue three"></div>
+    <div class="brick bg-purple three push-two"></div>
+    <div class="brick bg-blue three"></div>
+    <div class="brick bg-purple one push-one"></div>
+    <div class="brick bg-red three"></div>
+    <div class="brick bg-orange two push-one"></div>
+    <div class="brick bg-yellow two"></div>       
+    </div>
+            
+            
+    </main>
+    </body>
+</head>
